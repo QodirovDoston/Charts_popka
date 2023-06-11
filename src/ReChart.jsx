@@ -32,7 +32,7 @@ const LineGraph = () => {
     });
   }, []);
   return (
-    <div className='bg-[#FFFFFF] w-[640px]  h-[464px] shadow-2xl p-5 mt-10'>
+    <div className='bg-[#FFFFFF] w-[640px] rounded-[10px]  h-[464px] shadow-2xl p-5 mt-10'>
       <h3 className='text-[#555555] text-[20px] font-bold'>Talabalar statitistikasi</h3>
       <div className='border-02 mb-3 mt-3 border-gray-200'>
         </div>

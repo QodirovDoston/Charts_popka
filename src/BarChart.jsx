@@ -30,7 +30,7 @@ const MyChart = () => {
   }, []);
 
   return (
-    <div className='bg-[#FFFFFF] w-[890px]  h-[564px] shadow-2xl p-5 mt-10 '>
+    <div className='bg-[#FFFFFF] w-[890px] rounded-[10px] h-[564px] shadow-2xl p-5 mt-10 '>
       <h3 className='text-[#555555] text-[20px] font-bold'>Talabalar statitistikasi</h3>
       <div className='border-02 mb-3 mt-3 border-gray-200'>
       </div>

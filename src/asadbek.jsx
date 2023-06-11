@@ -12,7 +12,7 @@ class ApexChart extends Component {
                     type: 'donut',
                     dropShadow: {
                         // enabled: true,
-                        color: '#111',
+                        color: '#ffff',
                         top: -1,
                         left: 3,
                         blur: 3,
@@ -28,7 +28,6 @@ class ApexChart extends Component {
                             labels: {
                                 show: true,
                                 total: {
-                                    // showAlways: true,
                                     show: 'Tolaganlar',
 
                                 }
@@ -43,14 +42,6 @@ class ApexChart extends Component {
                         opacity: 0.8
                     }
                 },
-                fill: {
-                    type: 'pattern',
-                    opacity: 1,
-                    pattern: {
-                        enabled: true,
-                        style: ['verticalLines', 'squares'],
-                    },
-                },
                 states: {
                     hover: {
                         filter: 'none'
@@ -58,9 +49,6 @@ class ApexChart extends Component {
                 },
                 theme: {
                     palette: 'palette2'
-                },
-                title: {
-                    text: "Favourite Movie Type"
                 },
                 responsive: [{
                     breakpoint: 480,
@@ -78,17 +66,31 @@ class ApexChart extends Component {
     }
     render() {
         return (
-            <div id="chart">    
-                <div className='bg-[#FFFFFF] w-[540px]  h-[464px] shadow-2xl p-5 mt-10'>
-                    <h3 className='text-[#555555] text-[20px] font-bold'>Talabalar statitistikasi</h3>
-                    <div className='border-02 mb-3 mt-3 border-gray-200'>
-                    </div>
-                        <ReactApexChart options={this.state.options} series={this.state.series} type="donut" width={380} />
-                        <div className='border-1 mb-3 mt-3 border-gray-200'>
+            <div id="chart">
+                <div className='flex '>
+                    <div className='bg-[#FFFFFF] w-[440px] h-[510px] shadow-2xl p-5 mt-10'>
+                        <h3 className='text-[#555555] text-[20px] justify-center text-center font-bold'>Talabalar statitistikasi</h3>
+                        <div className='border-02 mb-3 mt-3 border-gray-200'>
                         </div>
-                        <p className='text-[#F48221] text-[15px] font-bold'>Barcha ma’lumotlar</p>
+                        <div className='flex  mt-8'>
+                            <ReactApexChart options={this.state.options} series={this.state.series} type="donut" width={420} />
+
+                        </div>
+                        <div className='border-02 mb-3 mt-8 border-gray-200'>
+                        </div>
+                        <div className='flex gap-24 justify-evenly'>
+                            <div className='flex '>
+                                <div className='w-[25px] rounded-[50%] h-[25px] border border-outline-solid-[4px] border-green-500 '> </div>
+                                <p className=' text-[15px] font-bold p-[7px]'>To'laganlar</p>
+                            </div>
+                            <div className='flex'>
+                                <div className='w-[25px] rounded-[50%] h-[25px] border border-outline-solid-[4px] border-red-500 '> </div>
+                                <p className=' text-[15px] font-bold p-[7px]'>Qarzdorlar</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
         );
     }
 }
