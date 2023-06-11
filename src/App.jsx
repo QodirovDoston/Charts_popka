@@ -1,3 +1,4 @@
+import ApexChart from "./asadbek";
 import MyChart from "./BarChart"
 import { Dubager } from "./Dubager";
 import PieChart from "./PieChart";
@@ -23,6 +24,7 @@ function App() {
         <MyChart />
           </div>
         </div >
+        <ApexChart/>
       </div>
     </>
   )
