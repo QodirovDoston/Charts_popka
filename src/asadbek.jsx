@@ -4,9 +4,7 @@ import { Component } from 'react'
 class ApexChart extends Component {
     constructor(props) {
         super(props);
-
         this.state = {
-
             series: [44, 55],
             options: {
                 chart: {
@@ -30,7 +28,6 @@ class ApexChart extends Component {
                             labels: {
                                 show: true,
                                 total: {
-
                                     // showAlways: true,
                                     show: 'Tolaganlar',
 

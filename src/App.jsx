@@ -15,11 +15,11 @@ function App() {
           <div>
             <Dubager />
           </div>
+        </div>
+        <div className="flex gap-5">
           <div>
         <PieChart />
           </div>
-        </div>
-        <div className="flex gap-5">
           <div>
         <MyChart />
           </div>
