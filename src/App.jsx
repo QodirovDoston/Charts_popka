@@ -1,4 +1,3 @@
-import Donutchart from "./asadbek";
 import MyChart from "./BarChart"
 import { Dubager } from "./Dubager";
 import PieChart from "./PieChart";
@@ -24,8 +23,6 @@ function App() {
         <MyChart />
           </div>
         </div >
-
-        {/* <Donutchart /> */}
       </div>
     </>
   )
